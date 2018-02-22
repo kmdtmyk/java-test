@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    image: openjdk:9
+    environment:
+      TZ: Asia/Tokyo
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
